@@ -20,6 +20,12 @@ a{
     padding: 10px 2rem;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: +1;
 }
 .nav-links{
     display: flex;
@@ -139,3 +145,119 @@ a{
     padding: 30px 0;
 }
 /* Home about us section ends */
+
+/* Home services section starts */
+.home-services-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px 100px;
+    row-gap: 50px;
+}
+.home-services-card{
+    box-shadow: 1px 1px 5px 0px;
+    text-align: center;
+    padding: 50px 10px 20px 10px;
+    width: 200px;
+}
+.home-services-card lottie-player{
+    width: 100%;
+    height: 80px;
+}
+.home-services-button{
+    border-radius:50px;
+    background-color: #e80566;
+    color: #fff;
+    padding: 5px 20px;
+    margin: 30px 0px;
+}
+.home-services-section h1{
+    text-align: center;
+    color: #e80566;
+    font-size: 33px;
+    font-weight: 600;
+}
+.home-services-section img, .home-industrial-section img{
+    margin: 0 auto;
+    display: block;
+    padding-top: 10px;
+    width: 5%;
+}
+/* Home services section ends */
+
+/* Home industrial cards section starts */
+.home-industrial-cards{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 50px 20px;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.home-industrial-card{
+    box-shadow: 1px 1px 5px 0px;
+    padding: 30px;
+    width: 170px;
+    position: relative;
+}
+.home-industrial-card i{
+    font-size: 30px;
+    border: 1px solid #e80566;
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: #e80566;
+    color: #fff;
+}
+.home-industrial-card h4{
+    padding: 30px 0px;
+    font-size: 25px;
+    font-weight: 600;
+    color: #e80566;
+}
+.home-industrial-card::after{
+    content: "";
+    background-color: #e80566;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.6s ease-in-out;
+    visibility: hidden;
+    z-index: -1;
+}
+.home-industrial-card:hover::after{
+    transform:scale(1);
+    /* transition: all 0.6s ease-in-out; */
+    visibility: visible;
+}
+.home-industrial-card:hover h4{
+    color: #fff;
+}
+/* Home industrial cards section ends */
+
+/* Footer section starts */
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #000;
+    padding: 50px;
+    color: #e80566;
+}
+.footer-links li a{
+    color: #fff;
+}
+.footer-links{
+    margin-top: 30px;
+}
+.footer-social-links i{
+    box-shadow: 1px 1px 5px 0px;
+    padding: 10px 15px;
+    background-color: azure;
+    border-radius: 50%;
+    margin: 0px 2px;
+}
+.footer-social-links i:hover{
+    background-color: #65258a;
+    color: #fff;
+}
+/* Footer section ends */
