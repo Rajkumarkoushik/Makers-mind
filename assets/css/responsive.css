@@ -1,0 +1,22 @@
+@media(max-width: 1200px){
+    .navigation{
+        justify-content: flex-start;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+    .home-about-section{
+        flex-direction: column;
+    }
+}
+
+/* Tab view */
+@media(max-width: 1023px){
+
+}
+
+
+/* Mobile view */
+@media(max-width: 767px){
+
+}
