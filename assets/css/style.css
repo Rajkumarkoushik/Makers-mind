@@ -50,6 +50,9 @@ a{
     color: brown;
     transition: all 0.6s ease-in-out;
 }
+.hamburger{
+    display: none;
+}
 .services-links{
     display: none;
     position: fixed;
@@ -573,3 +576,4 @@ a{
         background-color: #e207b3; left: 200px; top: 100px;
     }
 }
+

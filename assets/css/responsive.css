@@ -1,22 +1,105 @@
-@media(max-width: 1200px){
-    .navigation{
-        justify-content: flex-start;
+@media(max-width: 1024px){
+    body{
+        overflow-x: hidden !important;
     }
-    .nav-links {
-        gap: 20px;
-    }
-    .home-about-section{
-        flex-direction: column;
-    }
+.nav-logo img{
+    height: 30px;
+}
+.navigation{
+    justify-content: flex-start;
+}
+.nav-links li a{
+    font-size: 10px;
+}
+.nav-links{
+    gap: 10px;
+}
+.nav-btn{
+    padding: 5px 10px;
+    font-size: 10px;
+}
+.navigation{
+    padding: 10px 0px;
+}
+.home-banner-section{
+    flex-direction: column;
+}
+.home-banner-content h6 {
+    font-size: 16px;
+}
+.home-banner-content h1{
+    font-size: 28px;
+}
+.home-banner-content{
+    width: 30%;
+}
+.home-banner-section lottie-player{
+    height: 150px;
+    width: 25%;
+}
+.home-about-section{
+    flex-direction: column;
+    padding: 20px 10px;
+}
+.home-about-images img{
+    height: 250px;
+}
+.home-about-content{
+    width: 50%;
+}
+.home-services-cards {
+    grid-template-columns: auto auto;
+    padding: 50px 26px;
+}
+.home-industrial-cards{
+    grid-template-columns: repeat(3,1fr);
+}
 }
 
 /* Tab view */
 @media(max-width: 1023px){
-
+    .hamburger{
+        display: block;
+    }
 }
 
-
-/* Mobile view */
-@media(max-width: 767px){
-
+/* Phone view */
+@media(min-width: 320px) and (max-width: 525px){
+    .nav-links{
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 30px 0px;
+        transform: scale(0);
+        transition: all 0.5s ease-in-out;
+    }
+    .navigation {
+        justify-content: space-around;
+    }
+    .home-banner-content {
+        width: 100%;
+    }
+    .home-banner-section lottie-player {
+        height: 150px;
+        width: 100%;
+    }
+    .home-about-content {
+        width: 101%;
+    }
+    .home-services-cards {
+        grid-template-columns: auto;
+    }
+    .home-services-card, .home-industrial-card{
+        width: 100%;
+    }
+    .home-industrial-cards {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ 
 }
