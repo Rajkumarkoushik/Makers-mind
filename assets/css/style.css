@@ -724,4 +724,13 @@ transition: all 0.5s ease-in-out;
     }
   
   }
+
+  .cards{
+    border: 1px solid red;
+    padding: 30px;
+  }
+  .cards img{
+    width: 100%;
+    height: 200px;
+  }
   

@@ -93,23 +93,63 @@
 
 const formHide = document.querySelector(".form-hide");
 
-function myFunction(){
-    return formHide.classList.toggle("form-hide-active");
-}
+// function myFunction(){
+//     return formHide.classList.toggle("form-hide-active");
+// }
 
-const icon = document.querySelector(".icon");
-const web = document.querySelector(".password");
-icon.addEventListener("click", function passwordClick() {
-    icon.classList.toggle("fa-eye");
-    icon.classList.toggle("fa-eye-slash");
-    web.type = web.type === "password" ? "text" : "password"
-})
+// const icon = document.querySelector(".icon");
+// const web = document.querySelector(".password");
+// icon.addEventListener("click", function passwordClick() {
+//     icon.classList.toggle("fa-eye");
+//     icon.classList.toggle("fa-eye-slash");
+//     web.type = web.type === "password" ? "text" : "password"
+// })
 
+console.log(`are "you" a "developer"`);
 
+const string =["web", "app", "digital", "mobile", "ios"];
+// const text = string.unshift("developer");
+// console.log(string);
 
+const obj = {name:"web", age: 20, designation: "developer"}
 
+const objArray = [
+    {id : 0, name:"web", age: 20, designation: "developer" , img: "/assets/home-images/flowers-276014_1280.jpg"},
+    {id : 1,name:"fgjh", age: 43, designation: "yuikyt", img: "/assets/home-images/flowers-276014_1280.jpg"},
+    {id : 2, name:"ngm ", age: 27, designation: "gjgfh", img: "/assets/home-images/flowers-276014_1280.jpg"},
+    {id : 3, name:"wgngeb", age: 14, designation: "hgj", img: "/assets/home-images/flowers-276014_1280.jpg"},
+    {id : 4, name:"gmng", age: 10, designation: "fghj", img: "/assets/home-images/flowers-276014_1280.jpg"},
+    {id : 5, name:"gh", age: 15, designation: "fgjh", img: "/assets/home-images/flowers-276014_1280.jpg"},
+    {id : 6, name:"ghng", age: 16, designation: "fgh", img: "/assets/home-images/flowers-276014_1280.jpg"},
+    {id: 7, name:"ghh", age: 18, designation: "fgh", img: "/assets/home-images/flowers-276014_1280.jpg"},
+    {id : 8, name:"whgneb", age: 16, designation: "fgh", img: "/assets/home-images/flowers-276014_1280.jpg"}
+];
+// const map = objArray.filter(function myFunction(item){
+//     return item.age < 20 ;
+// });
+// console.log(map);
 
+let cards = "";
+objArray.map(function myFunction(item) {
+ cards += `
+ <div class="col-lg-4">
+ <div class="cards">
+ <img src=${item.img} alt="">
+ <h2>${item.name}</h2>
+ <h4>${item.age}</h4>
+ <h6>${item.designation}</h6>
+ <button>Click</button>
+ </div>
+ </div>
+`
+document.querySelector(".taghead").innerHTML = cards;
 
+});
+// document.querySelector(".taghead").innerHTML = map;
+
+// const string1 = "web, app, digital, mobile, ios";
+// const string2 = string1.substring(-9);
+// console.log(string2);
 
 
 
