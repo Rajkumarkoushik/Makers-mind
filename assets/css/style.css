@@ -669,14 +669,14 @@ transition: all 0.5s ease-in-out;
   }
   
   button {
-    padding: 19px 39px 18px 39px;
+    padding: 10px 20px;
     color: #FFF;
     background-color: #4bc970;
     font-size: 18px;
     text-align: center;
     font-style: normal;
     border-radius: 5px;
-    width: 100%;
+    /* width: 100px; */
     border: 1px solid #3ac162;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
@@ -734,3 +734,37 @@ transition: all 0.5s ease-in-out;
     height: 200px;
   }
   
+.interval{
+    transform: scale(1);
+    /* transition: all 0.3s ease-in-out; */
+}
+  .interval-active{
+    transform: scale(0);
+    /* transition: all 0.3s ease-in-out; */
+  }
+  .unorderlist{
+    display: flex;
+    justify-content: space-between;
+  }
+  .delete-button{
+    display: none !important;
+  }
+  .complete-active{
+    text-decoration: line-through;
+  }
+  .divison{
+    display: flex;
+    border: 1px solid red;
+    padding: 10px 20px;
+    width: 50%;
+    align-items: center;
+   justify-content: space-between;
+   margin: 10px auto;
+   border-radius: 10px;
+  }
+  .todo-form{
+    display: none;
+  }
+  .todo-form-active{
+    display: block;
+  }
